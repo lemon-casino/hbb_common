@@ -19,7 +19,8 @@ EXPOSE 21114 21115 21116 21116/udp 21117 21118 21119
 
 HEALTHCHECK --interval=10s --timeout=5s CMD /usr/bin/healthcheck.sh
 
-WORKDIR /data
+WORKDIR /app
+
 VOLUME /app/data
 
 VOLUME /data
